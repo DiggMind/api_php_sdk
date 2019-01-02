@@ -1,0 +1,19 @@
+{
+    "name": "diggu/opensdk",
+    "description": "DiggU Open SDK",
+    "authors": [
+        {
+            "name": "Develop Department",
+            "email": "develop@diggu.cn"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "diggu\\": "./src"
+        }
+    }
+}
