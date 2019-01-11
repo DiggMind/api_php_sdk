@@ -1,16 +1,16 @@
 <?php
 
-namespace diggu\agentsdk;
+namespace diggmind\agentsdk;
 
-use diggu\utils\Network;
+use diggmind\utils\Network;
 
 /**
- * Class DigguSDK
- * @package diggu\agentsdk
- * @created 2017-04-18 develop@diggu.cn
- * @modified 2017-04-18 develop@diggu.cn
- * @copyright © 2017 www.diggu.cn
- * @contact DP <develop@diggu.cn>
+ * Class DiggMindSDK
+ * @package diggmind\agentsdk
+ * @created 2017-04-18 develop@diggmind.com
+ * @modified 2017-04-18 develop@diggmind.com
+ * @copyright © 2017 www.diggmind.com
+ * @contact DP <develop@diggmind.com>
  */
 class Client
 {
@@ -31,7 +31,7 @@ class Client
      * Server url address
      * @var string
      */
-    public $serverUrl = 'http://apidev.diggu.cn/api/agent/v1';
+    public $serverUrl = 'http://apidev.diggmind.com/api/agent/v1';
 
     /**
      * 请求 access token
@@ -77,13 +77,13 @@ class Client
         switch ($env) {
 
             case 'local':
-                $this->serverUrl = 'http://api.diggu.local/api/agent/v1';
+                $this->serverUrl = 'http://api.diggmind.local/api/agent/v1';
                 break;
             case 'develop':
-                $this->serverUrl = 'http://apidev.diggu.cn/api/agent/v1';
+                $this->serverUrl = 'http://apidev.diggmind.com/api/agent/v1';
                 break;
             default:
-                $this->serverUrl = 'https://api.diggu.cn/api/agent/v1';
+                $this->serverUrl = 'https://api.diggmind.com/api/agent/v1';
         }
     }
 

@@ -1,14 +1,14 @@
 <?php
 
-namespace diggu;
+namespace diggmind;
 
 /**
  * Class Loader
- * @package diggu
- * @created 2017-04-18 develop@diggu.cn
- * @modified 2017-04-18 develop@diggu.cn
- * @copyright © 2017 www.diggu.cn
- * @contact DP <develop@diggu.cn>
+ * @package diggmind
+ * @created 2017-04-18 develop@diggmind.com
+ * @modified 2017-04-18 develop@diggmind.com
+ * @copyright © 2017 www.diggmind.com
+ * @contact DP <develop@diggmind.com>
  */
 class Loader
 {
@@ -18,10 +18,10 @@ class Loader
      * @var array
      */
     protected static $psr4 = [
-        'diggu' => __DIR__,
-        'diggu\\utils' => __DIR__ . '/utils',
-        'diggu\\opensdk' => __DIR__ . '/opensdk',
-        'diggu\\agentsdk' => __DIR__ . '/agentsdk'
+        'diggmind' => __DIR__,
+        'diggmind\\utils' => __DIR__ . '/utils',
+        'diggmind\\opensdk' => __DIR__ . '/opensdk',
+        'diggmind\\agentsdk' => __DIR__ . '/agentsdk'
     ];
 
     /**
@@ -31,21 +31,21 @@ class Loader
     protected static $classes = [];
 
     /**
-     * Bind diggu autoload
+     * Bind diggmind autoload
      * @retun void
      */
     public static function register()
     {
-        spl_autoload_register(['\\diggu\\Loader', 'autoLoad']);
+        spl_autoload_register(['\\diggmind\\Loader', 'autoLoad']);
     }
 
     /**
-     * Unbind diggu autoload
+     * Unbind diggmind autoload
      * @retun void
      */
     public static function unRegister()
     {
-        spl_autoload_unregister(['\\diggu\\Loader', 'autoLoad']);
+        spl_autoload_unregister(['\\diggmind\\Loader', 'autoLoad']);
     }
 
     /**

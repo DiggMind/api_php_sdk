@@ -1,16 +1,16 @@
 <?php
 
-namespace diggu\opensdk;
+namespace diggmind\opensdk;
 
 use JsonSerializable;
 
 /**
  * Class Result
- * @package diggu\opensdk
- * @created 2017-04-18 develop@diggu.cn
- * @modified 2017-04-18 develop@diggu.cn
- * @copyright © 2017 www.diggu.cn
- * @contact DP <develop@diggu.cn>
+ * @package diggmind\opensdk
+ * @created 2017-04-18 develop@diggmind.com
+ * @modified 2017-04-18 develop@diggmind.com
+ * @copyright © 2017 www.diggmind.com
+ * @contact DP <develop@diggmind.com>
  */
 class Result implements JsonSerializable
 {

@@ -2,14 +2,14 @@
 
 // 使用Composer则不用手动引入自动器
 require dirname(__DIR__) . '/src/Loader.php';
-diggu\Loader::register();
+diggmind\Loader::register();
 
 
 $appKey = '下发的APP_KEY';
 $appSecret = '下发的APP_SECRET';
 
 // 初始化SDK
-$sdk = new diggu\opensdk\Client($appKey, $appSecret);
+$sdk = new diggmind\opensdk\Client($appKey, $appSecret);
 
 // 设定SDK访问环境、develop测试服务器，prod正式服务器
 $sdk->setEnv('develop');
@@ -75,7 +75,7 @@ print json_encode($result6) . PHP_EOL;
 print "REPORT";
 $yourSystemEnv = 'prod';
 if ($yourSystemEnv == 'prod') {
-    print "http://wx.diggu.cn/channel/entry?channel_id=89&test_id=32&in_code=" . $result3['code'];
+    print "http://wx.diggmind.com/channel/entry?channel_id=89&test_id=32&in_code=" . $result3['code'];
 } else {
-    print "http://wxdev.diggu.cn/channel/entry?channel_id=89&test_id=32&in_code=" . $result3['code'];
+    print "http://wxdev.diggmind.com/channel/entry?channel_id=89&test_id=32&in_code=" . $result3['code'];
 }

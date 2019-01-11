@@ -5,12 +5,12 @@
 ```
 "repositories": [
     {
-        "url": "https://github.com/DiggU-Ltd/api_php_sdk.git",
+        "url": "https://github.com/DiggMind/api_php_sdk.git",
         "type": "git"
     }
 ],
 "require": {
-    "diggu/opensdk": "master"
+    "diggmind/opensdk": "master"
 }
 ```
 
@@ -22,13 +22,13 @@
 require_once __YOUR_PROJECT___ . 'SDK_PATH/src/Loader.php';
 
 // 自动加载SDK中目录
-diggu\\Loader::register();
+diggmind\\Loader::register();
 
 $appKey = '';
 $appSecret = '';
 $serverUrl = '';
 $accessToken = '';
 
-$client = new diggu\\opensdk\\Client($appKey, $appSecret, $serverUrl, $accessToken);
+$client = new diggmind\\opensdk\\Client($appKey, $appSecret, $serverUrl, $accessToken);
 
 ```
