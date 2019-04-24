@@ -4,7 +4,7 @@
 require dirname(__DIR__) . '/src/Loader.php';
 diggmind\Loader::register();
 
-$channelId = 0;
+$channelId = 0; // 下发的渠道ID
 $appKey = '下发的APP_KEY';
 $appSecret = '下发的APP_SECRET';
 
