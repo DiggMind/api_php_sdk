@@ -77,13 +77,13 @@ class Client
         switch ($env) {
 
             case 'local':
-                $this->serverUrl = 'http://api.diggmind.local/api/agent/v1';
+                $this->serverUrl = 'http://api.diggmind.local/api/v1';
                 break;
             case 'develop':
-                $this->serverUrl = 'http://apidev.diggmind.com/api/agent/v1';
+                $this->serverUrl = 'http://apidev.diggmind.com/api/v1';
                 break;
             default:
-                $this->serverUrl = 'https://api.diggmind.com/api/agent/v1';
+                $this->serverUrl = 'https://api.diggmind.com/api/v1';
         }
     }
 
