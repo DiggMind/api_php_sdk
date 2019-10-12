@@ -4,7 +4,7 @@
 require dirname(__DIR__) . '/src/Loader.php';
 diggmind\Loader::register();
 
-$channelId = 0; // 下发的渠道ID
+$channelCode = '下发的渠道标识';
 $appKey = '下发的APP_KEY';
 $appSecret = '下发的APP_SECRET';
 
@@ -75,7 +75,7 @@ print json_encode($result6) . PHP_EOL;
 print "REPORT";
 $yourSystemEnv = 'prod';
 if ($yourSystemEnv == 'prod') {
-    print "http://wx.diggmind.com/channel/entry?channel_id=$channelId&test_id=$testId&in_code=" . $result3['code'];
+    print "http://wx.diggmind.com/channel/entry?channel_code=$channelCode&test_id=$testId&in_code=" . $result3['code'];
 } else {
-    print "http://wxdev.diggmind.com/channel/entry?channel_id=$channelId&test_id=$testId&in_code=" . $result3['code'];
+    print "http://wxdev.diggmind.com/channel/entry?channel_code=$channelCode&test_id=$testId&in_code=" . $result3['code'];
 }
